@@ -13,7 +13,7 @@ Resources:
   KhaiDoUser:
     Type: 'AWS::IAM::User'
     Properties:
-      UserName: joe.smith@sagebase.org
+      UserName: khai.do@sagebase.org
       Groups:
         - !Ref AWSIAMAllUsersGroup
         - !Ref AWSIAMDeveloperUsersGroup
