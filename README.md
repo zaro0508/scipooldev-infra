@@ -1,11 +1,11 @@
 # Overview
-A project to install, configure and manage an AWS account.
+A project to install, configure and manage org-sagebase-scipooldev AWS account.
 
 ## Instructions to create or update CF stacks
 
 ```
 # Update CF stacks with sceptre:
-# sceptre launch-stack prod <stack_name>
+# sceptre launch prod <stack_name>
 ```
 
 The above should setup resources for the AWS account.  Once the infrastructure
