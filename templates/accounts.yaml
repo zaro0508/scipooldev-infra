@@ -98,7 +98,6 @@ Resources:
     Type: 'AWS::IAM::Group'
     Properties:
       ManagedPolicyArns:
-        - arn:aws:iam::aws:policy/ReadOnlyAccess
         - !Ref AWSIAMEnforceMfaPolicy
   AWSIAMBillingManagersGroup:
     Type: 'AWS::IAM::Group'
@@ -213,3 +212,7 @@ Outputs:
     Value: !Ref AWSIAMEnforceMfaPolicy
     Export:
       Name: !Sub '${AWS::Region}-${AWS::StackName}-EnforceMfaPolicy'
+  AWSIAMAllUsersGroup:
+    Value: !Ref AWSIAMAllUsersGroup
+    Export:
+      Name: !Sub '${AWS::Region}-${AWS::StackName}-AllUsersGroup'
