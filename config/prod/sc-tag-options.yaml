@@ -49,4 +49,4 @@ sceptre_user_data:
     - "verena.chung@sagebase.org"
   ProductIDs:
     - !stack_output_external sc-portfolio-ec2::SCEC2portfolioId
-    - !stack_output_external sc-portfolio-s3-basic::SCS3portfolio
+    - !stack_output_external sc-portfolio-s3-basic::SCS3portfolioId
